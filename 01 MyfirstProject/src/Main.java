@@ -13,7 +13,8 @@ public class Main {
 		 * a comment
 		 */
 		
-		System.out.println(); //Created with shortcut sysout + ctrl + spacebar
+		 //Created with shortcut sysout + ctrl + spacebar
+		System.out.println("He said that \n\"I am from Egypt\" \nbut lives abroad");
 	}
 
 }
