@@ -3,7 +3,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		System.out.println("///tI love pizza");
+		System.out.println("\\\t\"I love pizza\"");
 		System.out.println("It's really good");
 
 		//This is a comment
