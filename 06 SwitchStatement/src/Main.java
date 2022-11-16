@@ -28,9 +28,9 @@ public class Main {
 		int num1, num2;
 		
 		System.out.println("Enter one of the below choices:");
-		System.out.println("1) Add two numbers");
-		System.out.println("2) Subtract two numbers");
-		System.out.println("3) Get the square of a number");
+		System.out.println("1)Add two numbers");
+		System.out.println("2)Subtract two numbers");
+		System.out.println("3)Get the square of a number");
 		
 		int choice = reader.nextInt();
 				
