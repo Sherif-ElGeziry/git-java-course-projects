@@ -22,6 +22,18 @@ public class Main {
 		
 		System.out.println("The sum of the array is: " + sum);
 		System.out.println("The averge of the array is: " + (sum / size));
+		
+		int count = 0;
+		sum = 0;
+		for(int i = 0; i < salaries.length; i++) {
+			if(salaries[i] > 0) {
+				sum += salaries[i];
+				count++;
+			}
+		}
+		
+		System.out.println("The sum of the array is: " + sum);
+		System.out.println("The averge of the array is: " + (sum / count));
 	}
 
 }
