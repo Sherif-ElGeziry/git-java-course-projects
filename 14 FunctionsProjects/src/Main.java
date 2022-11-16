@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class Main {
 
+	static int globalVar = 100;
+	
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		int x, y, z, total;
@@ -18,13 +20,21 @@ public class Main {
 		average = avr(x, y, z);
 		display(total, average);
 
+		System.out.println(globalVar);
+		int globalVar = 500;
+		System.out.println(globalVar);
+		//System.out.println(DisplayOutput. globalVar);
+		
 	}
 	
 	public static int sum(int n1, int n2, int n3) {
+		System.out.println(globalVar);
 		return n1 + n2 + n3;
+		
 	}
 	
 	public static double avr(int n1, int n2, int n3) {
+		System.out.println(globalVar);
 		return sum(n1,n2,n3) / (double)3;
 	}
 	
