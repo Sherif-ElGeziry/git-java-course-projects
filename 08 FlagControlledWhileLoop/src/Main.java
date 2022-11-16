@@ -17,6 +17,23 @@ public class Main {
 		}
 		
 		System.out.println("The sum is: " + sum);
+		
+		//Another game program added
+		nonNegative = true;
+		int rand = (int)(Math.random() * 100);
+		System.out.println(rand);
+		while(nonNegative) {
+			System.out.println("Enter your guess: ");
+			x = reader.nextInt();
+			if(x > rand)
+				System.out.println("You chose bigger number try again.");
+			else if(x < rand)
+				System.out.println("You chose smaller number try again.");
+			else {
+				nonNegative = false;
+				System.out.println("You win!!");
+			}
+		}
 	}
 
 }
