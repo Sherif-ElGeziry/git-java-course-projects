@@ -4,16 +4,17 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner grade = new Scanner(System.in);
-		int count = 1, sum = 0;
+		int count = 1, sum = 0, num = 0;
+		System.out.println("Enter 6 grades or -1 to exit");
 		
-		while(count <= 6) {
+		while(count <= 6 && num != -1) {
 			System.out.println("Enter grade of student: " + count);
-			int num = grade.nextInt();
+			num = grade.nextInt();
 			sum += num;
 			count++;
 		}
-		
-		System.out.println("The average grade is: " + sum / 6);
+		if(count > 6)
+			System.out.println("The average grade is: " + sum / 6);
 	}
 
 }
