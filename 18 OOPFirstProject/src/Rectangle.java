@@ -16,6 +16,11 @@ public class Rectangle {
 		setWidth(w);
 	}
 	
+	public Rectangle(Rectangle room) {
+		length = room.getLength();
+		width = room.getWidth();
+	}
+	
 	public void modifyObject(Rectangle r) {
 		length = 42;
 		width = 35;
@@ -26,6 +31,13 @@ public class Rectangle {
 		result.length = this.length + room.length;
 		result.width = this.width + room.width;
 		return result;
+	}
+	
+	public boolean isEqual(Rectangle room) {
+		if(this.getLength() == room.getLength() && this.getWidth() == room.getWidth())
+			return true;
+		else
+			return false;
 	}
 	
 	public void setLength(double l) {

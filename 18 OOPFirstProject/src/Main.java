@@ -45,7 +45,21 @@ public class Main {
 		System.out.println("\n" + r1.getLength() + "\t" + r1.getWidth() + "\t" + r1.getArea());
 		System.out.println(r2.getLength() + "\t" + r2.getWidth() + "\t" + r2.getArea() + "\n");
 		
-		System.out.println(r1.add(r2).getLength() + "\t" + r1.add(r2).getWidth() + "\t" + r1.add(r2).getArea());
+		System.out.println(r1.add(r2).getLength() + "\t" + r1.add(r2).getWidth() +
+				"\t" + r1.add(r2).getArea());
+		
+		if(r1.isEqual(r2))
+			System.out.println("The ojects data are equal");
+		else
+			System.out.println("The ojects data are not equal");
+		
+		/*
+		 	r1 = r2;
+		 	r2.setLength(90);
+		 	System.out.println(r1.getLength() + "\t" + r2.getLength()); //The two outputs are same
+		 */
+		Rectangle r3 = new Rectangle(r1);
+		System.out.println("\n" + r3.getLength() + "\t" + r3.getWidth() + "\t" + r3.getArea());
 	}
 
 }
