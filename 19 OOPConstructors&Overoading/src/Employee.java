@@ -6,6 +6,7 @@ public class Employee {
 	private double salary;
 	private double bonus;
 	private boolean resident;
+	private static int counter;
 	
 	public Employee() {
 		empId = 100;
@@ -14,11 +15,13 @@ public class Employee {
 		salary = 15000;
 		bonus = 5000;
 		resident = true;
+		counter++;
 	}
 	
 	public Employee(int id, String n) {
 		empId = id;
 		name = n;
+		counter++;
 	}
 	
 	public Employee(int id, String n, boolean r) {
@@ -52,6 +55,11 @@ public class Employee {
 	
 	public void setId(int id) {
 		empId = id;
+	}
+	
+	public static int getNoOfObjects() {
+		//Can't call any instant field here only static fields
+		return counter;
 	}
 	
 	public void printEmployee() {
