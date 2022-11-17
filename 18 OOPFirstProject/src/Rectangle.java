@@ -4,12 +4,12 @@ public class Rectangle {
 	private double width;
 	
 	public void setLength(double l) {
-		if(length > 0)
+		if(l > 0)
 		length = l;
 	}
 	
 	public void setWidth(double w) {
-		if(width > 0)
+		if(w > 0)
 		width = w;
 	}
 	
