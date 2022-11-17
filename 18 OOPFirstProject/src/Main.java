@@ -33,6 +33,19 @@ public class Main {
 		
 		System.out.println("Cell phone class output:");
 		System.out.println(cp.getManufact() + "\t" + cp.getModel() + "\t" + cp.getRetailPrice());
+		
+		//Testing passing of arguments
+		double roomLength = 50;
+		r1.setLength(roomLength);
+		r1.setLength(30);
+		System.out.println("\n" + roomLength);
+		
+		r1.modifyObject(r2);
+		r2.modifyObject(r1);
+		System.out.println("\n" + r1.getLength() + "\t" + r1.getWidth() + "\t" + r1.getArea());
+		System.out.println(r2.getLength() + "\t" + r2.getWidth() + "\t" + r2.getArea() + "\n");
+		
+		System.out.println(r1.add(r2).getLength() + "\t" + r1.add(r2).getWidth() + "\t" + r1.add(r2).getArea());
 	}
 
 }
