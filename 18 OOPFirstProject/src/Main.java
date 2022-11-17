@@ -7,7 +7,7 @@ public class Main {
 		r1.setLength(7);
 		r1.setWidth(12.5);
 		
-		Rectangle r2 = new Rectangle(20, 30.2);
+		Rectangle r2 = new Rectangle(20, 30.2); 
 		System.out.println(r2.getLength() + "\t" + r2.getWidth() + "\t" + r2.getArea() + "\n");
 		
 		Car c1 = new Car();
