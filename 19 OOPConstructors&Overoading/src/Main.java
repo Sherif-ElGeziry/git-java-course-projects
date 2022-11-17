@@ -25,6 +25,8 @@ public class Main {
 		System.out.println(Calc.add(20, 30));
 		System.out.println(Calc.subtract(20, 30));
 		System.out.println(Calc.multiply(20, 30));
+		
+		
 	}
 
 }
