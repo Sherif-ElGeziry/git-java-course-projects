@@ -4,11 +4,11 @@ public class Student extends Person{
 	private String specialization;
 	private double gpa;
 	
-	Student(){
+	public Student(){
 		System.out.println("I am the derived class constructor");
 	}
 	
-	Student(String n, int a, String add, String nat, int lvl, String spec, double g){
+	public Student(String n, int a, String add, String nat, int lvl, String spec, double g){
 		super(n, a, add, nat);
 		studyLvl = lvl;
 		specialization = spec;
