@@ -1,6 +1,7 @@
 
 public class Employee extends Person{
-	private double salary;
+	protected double salary; //Allows subclasses to access the field
+	//private double salary;
 	private String rank;
 	private String job;
 	
@@ -27,6 +28,7 @@ public class Employee extends Person{
 		job = j;
 	}
 	
+//	public final double getSalary() {//If we use final then no subclass can override this function
 	public double getSalary() {
 		return salary;
 	}

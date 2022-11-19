@@ -16,7 +16,11 @@ public class SalariedEmployee extends Employee{
 	
 	@Override
 	public double getSalary() {
-		return super.getSalary() + bonus - deductions;
+		//salary can only be used if it if defined as protected in base class
+		return salary + bonus - deductions; 
+		
+		//used super if salary is private and can't be accessed
+		//return super.getSalary() + bonus - deductions; 
 	}
 	
 	public void setBonus(double b) {
