@@ -38,4 +38,10 @@ public class Employee extends Person{
 	public String getJob() {
 		return job;
 	}
+	
+	@Override
+	public void printAllDetails() {
+		super.printAllDetails();
+		System.out.println("Salary = " + salary + "\nRank = " + rank + "\nJob = " + job);
+	}
 }

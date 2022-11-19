@@ -14,6 +14,11 @@ public class SalariedEmployee extends Employee{
 		deductions = d;
 	}
 	
+	@Override
+	public double getSalary() {
+		return super.getSalary() + bonus - deductions;
+	}
+	
 	public void setBonus(double b) {
 		bonus = b;
 	}
@@ -28,5 +33,9 @@ public class SalariedEmployee extends Employee{
 	
 	public double getDeductions() {
 		return deductions;
+	}
+	
+	public void specialFun() {
+		
 	}
 }

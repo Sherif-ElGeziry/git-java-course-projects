@@ -47,4 +47,9 @@ public class Person {
 	public String getNationality() {
 		return nationality;
 	}
+	
+	public void printAllDetails() {
+		System.out.println("Name = " + name + "\nAge = " + age + "\nAddress = " + address
+				+ "\nNationality = " + nationality);
+	}
 }
