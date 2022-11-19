@@ -14,6 +14,12 @@ public class HourlyEmployee extends Employee{
 		hoursRate = h;
 	}
 	
+	@Override
+	public double getSalary() {
+		//We must now create this function as it is abstract in base class or we get error
+		return workingHours * hoursRate; 
+	}
+	
 	public void setWorkingHours(double wor) {
 		workingHours = wor;
 	}

@@ -1,5 +1,5 @@
 
-public class Employee extends Person{
+public abstract class Employee extends Person{
 	protected double salary; //Allows subclasses to access the field
 	//private double salary;
 	private String rank;
@@ -29,9 +29,10 @@ public class Employee extends Person{
 	}
 	
 //	public final double getSalary() {//If we use final then no subclass can override this function
-	public double getSalary() {
-		return salary;
-	}
+	public abstract double getSalary(); //No body function need to be written now as abstract 
+//	{									//is used
+//		return salary;
+//	}
 	
 	public String getRank() {
 		return rank;

@@ -12,7 +12,12 @@ public class Main {
 				15000, "Manager", "Engineer", 5000, 1000);
 		System.out.println("\n" + se1.getSalary() + "\n");
 		
-		Employee e1 = new Employee("Sherif", 28, "Alex", "Egypt", 15000, "Manager", "Engineer");
+		//This line cant work anymore as I defined the class as abstract
+		//Employee e1 = new Employee("Sherif", 28, "Alex", "Egypt", 15000, "Manager", "Engineer");
+		
+		//can only assign subclass to e1 now
+		Employee e1 = new SalariedEmployee("Sherif", 28, "Alex", "Egypt", 
+				15000, "Manager", "Engineer", 5000, 1000);
 		e1.printAllDetails();
 		System.out.println();
 		
