@@ -12,7 +12,7 @@ public abstract class Employee {
 
 	}
 
-	public Employee(String name, int ssn, String address, Gender gender) {
+	public Employee(String name, String address, int ssn, Gender gender) {
 		this.name = name;
 		this.address = address;
 		this.ssn = ssn;

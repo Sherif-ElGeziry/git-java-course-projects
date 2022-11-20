@@ -9,9 +9,9 @@ public class SalariedEmployee extends Employee implements Displeyable {
 
 	}
 
-	public SalariedEmployee(String name, int ssn, String address, Gender gender, double salary, double bonus,
+	public SalariedEmployee(String name, String address, int ssn, Gender gender, double salary, double bonus,
 			double deductions) {
-		super(name, ssn, address, gender);
+		super(name, address, ssn, gender);
 		this.salary = salary;
 		this.bonus = bonus;
 		this.deductions = deductions;

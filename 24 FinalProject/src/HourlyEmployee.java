@@ -7,8 +7,8 @@ public class HourlyEmployee extends Employee implements Displeyable {
 
 	}
 
-	public HourlyEmployee(String name, int ssn, String address, Gender gender, double hourRate, int numOfHours) {
-		super(name, ssn, address, gender);
+	public HourlyEmployee(String name, String address, int ssn, Gender gender, double hourRate, int numOfHours) {
+		super(name, address, ssn, gender);
 		this.hourRate = hourRate;
 		this.numOfHours = numOfHours;
 	}

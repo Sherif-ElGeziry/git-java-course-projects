@@ -7,9 +7,9 @@ public class CommissionEmployee extends Employee implements Displeyable {
 
 	}
 
-	public CommissionEmployee(String name, int ssn, String address, Gender gender, double grossSales,
+	public CommissionEmployee(String name, String address, int ssn, Gender gender, double grossSales,
 			double commissionRate) {
-		super(name, ssn, address, gender);
+		super(name, address, ssn, gender);
 		this.grossSales = grossSales;
 		this.commissionRate = commissionRate;
 	}
